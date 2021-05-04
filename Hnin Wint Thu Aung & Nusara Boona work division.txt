@@ -1,0 +1,35 @@
+
+function changeImg() {
+  var image = document.querySelector('#sec1');
+  var bgImg = image.style.backgroundImage;
+
+  if (bgImg === 'url("../css/land.jpg")') {
+   image.style.backgroundImage = "url('../css/landnight.jpg')"
+  } else {
+   image.style.backgroundImage = "url('../css/land.jpg')"
+  }
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+
+<div id="night">
+<button onclick="changeImg()">☀️/🌙</button>
+</div>
+
+            <button type="button" class="collapsible">Note From Chigu</button>
+
+
+            <div class="content">
+            <p>フリーランスで背景描いてます。お仕事のご相談はDMからお願いします<br>
+                ※無断転載・加工お断りします。ただいま新規案件お受けできません</p>
+            </div>

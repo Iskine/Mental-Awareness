@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <title>Mental Health Awareness</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#sec0">Main</a>
+            <a href="#sec1">Anxiety Disorder</a>
+            <a href="#sec2">Depression</a>
+            <a href="#sec3">Eating Disorder</a>
+            <a href="#sec4">OCD</a>
+            <a href="#sec5">Be still</a>
+        </div>
+
+        <button class="open-button" onclick="openForm()">Chat with a specialist!</button>
+
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+        
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Leave a message here and we will get a specialist contact you" name="msg" required></textarea>
+        
+                <button type="submit" class="btn"  >Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        </div>
+
+        <section id="sec0">
+
+                <div class="textland" style="text-align: center;">Mental Illness Awareness</div>
+            
+            <br>
+            <p class="info">Types of mental health issues and illnesses</p>
+            <br>
+            <br>
+            <button type="button" class="collapsible" style="font-size: large;">What is Mental Illness?</button>
+            <div class="content">
+                <p>
+                    <ul style="padding: 10px;">
+                            <br>
+                        <li style="color: gainsboro;">Mental illness is a general term for a group of illnesses that may impact on a person's thoughts,
+                             perceptions, feelings and behaviours.</li>
+                            <br>
+                        <li style="color: gainsboro;">Mental illness can affect working and personal relationships.</li>
+                            <br>
+                        <li style="color: gainsboro;">Medication, counselling or both can help you manage mental illness.</li>
+                            <br>
+                    </ul>  
+                </p>
+            </div>
+        </section>
+
+        <section id="sec1">
+
+            <h1 style="text-align: left; padding: 30px;">Anxiety Disorder</h1>
+            <br>
+            <p style="background-color: rgba(0, 0, 0, 0.438); width: 40%; font-size: larger; padding: 20px;">
+                Anxiety disorders is a group of mental health disorders
+                 that includes generalised anxiety disorders, social phobias,
+                  specific phobias (for example, agoraphobia and claustrophobia),
+                   panic disorders, obsessive compulsive disorder (OCD) and 
+                   post-traumatic stress disorder. Untreated, anxiety disorders
+                    can lead to significant impairment on people’s daily lives.
+            </p>
+            <br>
+            <button class="more" onclick="document.location='../html/fewdinfo/page1/page1.html'"><span>Learn More </span></button>
+        </section>
+           
+        <section id="sec2">
+            <br>
+            <br>
+            <br>
+            <h1>Depression</h1>
+            <p style="background-color: rgba(0, 0, 0, 0.438); width: 40%; font-size: larger; padding: 20px;">
+                Depression is a mood disorder characterised by lowering of mood,
+                 loss of interest and enjoyment, and reduced energy. It is not just feeling sad.
+                  There are different types and symptoms of depression. There are varying levels
+                   of severity and symptoms related to depression. Symptoms of depression can
+                    lead to increased risk of suicidal thoughts or behaviours.
+                    <a href="../html/fewdinfo/page2/page2.html" style="text-decoration: none;">Click here to learn more...</a>
+            </p>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="../img/21.jpg" style="width:300px">  
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="../img/22.jpg" style="width:300px">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="../img/23.jpg" style="width:300px">
+                </div>
+  
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="../img/34.jpg" style="width:300px">
+                </div>
+  
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+                <br>
+            </div>
+
+        </section>
+            
+      
+        <section id="sec3">
+            <h1>Eating Disorder</h1>
+            <p style="background-color: rgba(0, 0, 0, 0.438); width: 40%; font-size: larger; padding: 20px;">
+                Eating disorders include anorexia, bulimia nervosa and other binge eating disorders. 
+                Eating disorders affect females and males and can have serious psychological 
+                and physical consequences.
+                <a href="../html/fewdinfo/page3/page3.html" style="text-decoration: none;">Click here to learn more...</a>
+            </p>
+            <br>
+            <br>
+            <img src="../img/31.gif" alt="hungry">
+        </section>
+      
+      
+        <section id="sec4">
+            <h1>Obsessive Compulsive Disorder</h1>
+            <p style="background-color: rgba(0, 0, 0, 0.438); width: 40%; font-size: larger; padding: 20px;">
+                Obsessive compulsive disorder (OCD) is an anxiety disorder. Obsessions are recurrent thoughts,
+                 images or impulses that are intrusive and unwanted. Compulsions are time-consuming and 
+                 distressing repetitive rituals. Ttreatments include cognitive behaviour therapy (CBT),
+                  and medications
+            </p>
+            <br>
+            <button class="more" onclick="document.location='../html/fewdinfo/page4/page4.html'"><span>Learn More </span></button>
+        </section>
+        
+        <section id="sec5">
+            <h1 class="glow">Deuteronomy 31:8</h1>
+            <p class="info" style="width: 50%;">“The Lord himself goes before you and will be with you;
+                 he will never leave you nor forsake you. Do not be afraid;
+                  do not be discouraged.”</p>
+        </section>
+
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
